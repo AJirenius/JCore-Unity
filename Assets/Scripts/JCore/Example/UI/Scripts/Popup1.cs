@@ -4,30 +4,20 @@ using UnityEngine;
 
 namespace JCore.UI
 {
-    public class SecondScreen : Screen<NoParams>
+    public class Popup1 : Screen<Popup1Params>
     {
         public void OnButton1Press()
         {
+            Debug.Log("BACK");
             ScreenManager.Instance.Back();
+            param.onOk.Invoke();
         }
-
-        private void OnDialogueResult(DialogueResult result)
-        {
-            Debug.Log("RESULT:"+result.cont);
-            if (result.cont == true)
-            {
-                
-            }
-            else
-            {
-                
-            }
-        }
-
+        
         public void OnButton2Press()
         {
-            Gem.Register<DialogueResult>(OnDialogueResult);
-            ScreenManager.Instance.AddToQueue("Popup1");
+            Debug.Log("BACK");
+            ScreenManager.Instance.Back();
+            param.onCancel.Invoke();
         }
     }
 }

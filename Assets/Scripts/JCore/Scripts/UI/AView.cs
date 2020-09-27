@@ -13,6 +13,8 @@ namespace JCore.UI
         protected virtual void OnAnimInEnd() { }
         protected virtual void OnAnimOutStart() { }
         protected virtual void OnAnimOutEnd() { }
+        protected virtual void OnInteractionEnabled() { }
+        protected virtual void OnInteractionDisabled() { }
 
         private Animator animator;
         private CanvasGroup canvasGroup;
@@ -41,6 +43,17 @@ namespace JCore.UI
             SetState(ViewState.AnimatingOut);
         }
 
+        
+        public void EnableInteraction()
+        {
+            SetState(ViewState.Active);
+        }
+
+        public void DisableInteraction()
+        {
+            SetState(ViewState.InteractionDisabled);
+        }
+
         private void SetState(ViewState state)
         {
             if ((state == ViewState.AnimatingIn && currentState == ViewState.Active) ||
@@ -65,11 +78,18 @@ namespace JCore.UI
                 case ViewState.Active:
                     animator.enabled = false;
                     canvasGroup.blocksRaycasts = true;
+                    OnInteractionEnabled();
                     break;
 
+                case ViewState.InteractionDisabled:
+                    canvasGroup.blocksRaycasts = false;
+                    OnInteractionDisabled();
+                    break;
+                
                 case ViewState.AnimatingOut:
                     animator.enabled = true;
                     canvasGroup.blocksRaycasts = false;
+                    OnInteractionDisabled();
                     TriggerAnim(h_AnimOut);
                     OnAnimOutStart();
                     break;
@@ -121,5 +141,5 @@ namespace JCore.UI
         }
     }
 
-    public enum ViewState { Init, Inactive, AnimatingIn, Active, AnimatingOut }
+    public enum ViewState { Init, Inactive, AnimatingIn, Active, InteractionDisabled, AnimatingOut }
 }

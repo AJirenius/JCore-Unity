@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6642ecd3-6c23-47ee-8a3d-9421f4e9a173" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Scenes/UIScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Scenes/UIScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/DialogueResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/DialogueResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1Params.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1Params.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/SecondScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/SecondScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/ScreenManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/ScreenManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/FirstScreenParams.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1Params.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/ScreenManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/SecondScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/GameEvents/AGameEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/DialogueResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/GameEvents/Gem.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/DialogueResult.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1Params.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/SecondScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/ScreenManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1i2zcaXH6AvxNe63JTUyaReOf3s" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

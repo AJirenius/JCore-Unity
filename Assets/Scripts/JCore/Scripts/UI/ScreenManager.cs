@@ -42,7 +42,14 @@ namespace JCore.UI
         {
             if (queue.Count > 0)
             {
-                queue[queue.Count - 1].Close();
+                if (newScreen.isPopup == false)
+                {
+                    queue[queue.Count - 1].Close();
+                }
+                else
+                {
+                    queue[queue.Count - 1].DisableInteraction();
+                }
             }
             queue.Add(newScreen);
             if (param != null) newScreen.SetParams(param);
@@ -71,15 +78,25 @@ namespace JCore.UI
         {
             if (queue.Count > 0)
             {
+                bool backFromPopup = queue[queue.Count - 1].isPopup;       
                 queue[queue.Count - 1].Close();
                 queue.RemoveAt(queue.Count - 1);
-            }
-            if (queue.Count > 0)
-            {
-                AScreen backScreen = queue[queue.Count - 1];
-                backScreen.gameObject.SetActive(true);
-                backScreen.Open();
-                OpenPanels(backScreen);
+
+                if (queue.Count > 0)
+                {
+                    AScreen backScreen = queue[queue.Count - 1];
+                    // backScreen.gameObject.SetActive(true); done in AView?
+                    if (backFromPopup)
+                    {
+                        backScreen.EnableInteraction();
+                    }
+                    else
+                    {
+                        backScreen.Open();
+                    }
+                    
+                    OpenPanels(backScreen);
+                }
             }
         }
 

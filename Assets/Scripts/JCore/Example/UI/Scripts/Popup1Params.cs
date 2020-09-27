@@ -1,14 +1,15 @@
 ﻿using JCore.UI;
+using UnityEngine.Events;
 
-public class FirstScreenParams : AViewParams
+public class Popup1Params : AViewParams
 {
-    public string name = "FirstScreen";
-    public int number = 12345;
+    public UnityAction onOk;
+    public UnityAction onCancel;
     
-    public FirstScreenParams(string name, int number)
+    public Popup1Params(UnityAction onOk, UnityAction onCancel)
     {
-        this.name = name;
-        this.number = number;
+        this.onOk = onOk;
+        this.onCancel = onCancel;
     }
 
 }
