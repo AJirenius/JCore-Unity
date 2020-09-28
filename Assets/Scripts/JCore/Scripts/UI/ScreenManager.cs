@@ -12,7 +12,8 @@ namespace JCore.UI
         public Dictionary<string, APanel> panelsById;
         public List<AScreen> queue;
         public List<APanel> openPanels;
-
+        public Backdrop backdrop;
+        
         void Awake()
         {
             panelsById = new Dictionary<string, APanel>();
@@ -38,6 +39,7 @@ namespace JCore.UI
             AddToQueue(screensById[id], param);
         }
 
+        // ALL additions of screens will in the end be executed in this method
         public void AddToQueue(AScreen newScreen, AViewParams param = null)
         {
             if (queue.Count > 0)
@@ -55,6 +57,8 @@ namespace JCore.UI
             if (param != null) newScreen.SetParams(param);
             newScreen.Open();
             OpenPanels(newScreen);
+
+            if (backdrop) backdrop.Open(newScreen);
         }
 
         public void CloseQueue(bool closePanels = true)
@@ -64,6 +68,7 @@ namespace JCore.UI
                 queue[queue.Count - 1].Close();
                 queue.RemoveAt(queue.Count - 1);
             }
+            
             if (closePanels)
             {
                 foreach (APanel panel in openPanels)
@@ -72,6 +77,8 @@ namespace JCore.UI
                 }
                 openPanels.Clear();
             }
+            
+            if (backdrop) backdrop.Close();
         }
 
         public void Back()
@@ -80,12 +87,12 @@ namespace JCore.UI
             {
                 bool backFromPopup = queue[queue.Count - 1].isPopup;       
                 queue[queue.Count - 1].Close();
+                if (backdrop) backdrop.Close();
                 queue.RemoveAt(queue.Count - 1);
 
                 if (queue.Count > 0)
                 {
                     AScreen backScreen = queue[queue.Count - 1];
-                    // backScreen.gameObject.SetActive(true); done in AView?
                     if (backFromPopup)
                     {
                         backScreen.EnableInteraction();
@@ -96,7 +103,9 @@ namespace JCore.UI
                     }
                     
                     OpenPanels(backScreen);
+                    if (backdrop) backdrop.Open(backScreen);
                 }
+                
             }
         }
 
@@ -137,6 +146,8 @@ namespace JCore.UI
                 screensById.Add(screen.name, screen);
                 screen.Initialize();
             }
+            
+            if (backdrop) backdrop.Initialize();
         }
     }
 }

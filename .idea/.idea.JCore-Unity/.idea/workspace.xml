@@ -20,16 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6642ecd3-6c23-47ee-8a3d-9421f4e9a173" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/Backdrop.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/Backdrop.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.JCore-Unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JCore-Unity/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.JCore-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JCore-Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Scenes/UIScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Scenes/UIScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/DialogueResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/DialogueResult.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1Params.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1Params.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/SecondScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/SecondScreen.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/ScreenManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/ScreenManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,25 +40,31 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/FirstScreenParams.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1Params.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AViewParams.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/ScreenManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/Panel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/DialogueResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/APanel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/Backdrop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AScreen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/Screen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/SecondScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/GameEvents/AGameEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/DialogueResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/GameEvents/Gem.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/DialogueResult.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1Params.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/SecondScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/ScreenManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/ScreenManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/Backdrop.cs" />
       </list>
     </option>
   </component>

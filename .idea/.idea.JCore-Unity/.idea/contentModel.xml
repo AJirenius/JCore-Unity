@@ -39,6 +39,7 @@
                 <e p="AScreen.cs" t="Include" />
                 <e p="AView.cs" t="Include" />
                 <e p="AViewParams.cs" t="Include" />
+                <e p="Backdrop.cs" t="Include" />
                 <e p="Panel.cs" t="Include" />
                 <e p="Screen.cs" t="Include" />
                 <e p="ScreenManager.cs" t="Include" />
