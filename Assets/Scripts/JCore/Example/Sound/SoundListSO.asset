@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e083b75e8fa2384183c79941c5152ca, type: 3}
+  m_Name: SoundListSO
+  m_EditorClassIdentifier: 
+  SearchFolder: Assets/Scripts/JCore/Example/Sound/SoundSO
+  entries:
+  - {fileID: 11400000, guid: 6c9b21e89ad8b4686943582f9a3e31e4, type: 2}
+  - {fileID: 11400000, guid: fe9ba932907554174a4cd7afdfaf6c57, type: 2}
+  - {fileID: 11400000, guid: bec4448cf00414ad3954a7c5ec69e82e, type: 2}

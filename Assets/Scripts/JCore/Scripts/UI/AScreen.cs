@@ -6,6 +6,7 @@ namespace JCore.UI
 {   
     public abstract class AScreen : AView
     {
+        public bool useDefaultSfx = true;
         public bool isPopup = false;
         public bool useBackdrop = false;
         public List<APanel> panels;

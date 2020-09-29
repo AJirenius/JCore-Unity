@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using JCore.Sound;
 using UnityEngine;
 
 namespace JCore.UI
@@ -8,6 +10,8 @@ namespace JCore.UI
     [RequireComponent(typeof(CanvasGroup))]
     public abstract class AView : MonoBehaviour
     {
+         
+        
         protected virtual void OnParamsSet() { }
         protected virtual void OnAnimInStart() { }
         protected virtual void OnAnimInEnd() { }
@@ -16,10 +20,11 @@ namespace JCore.UI
         protected virtual void OnInteractionEnabled() { }
         protected virtual void OnInteractionDisabled() { }
 
+        private Dictionary<ViewState, SoundSO> stateSfx;
         private Animator animator;
         private CanvasGroup canvasGroup;
         public ViewState currentState;
-
+        public List<StateSfx> sfx;
         static private int h_AnimIn = Animator.StringToHash("AnimIn");
         static private int h_AnimOut = Animator.StringToHash("AnimOut");
 
@@ -27,6 +32,11 @@ namespace JCore.UI
 
         public virtual void Initialize()
         {
+            stateSfx = new Dictionary<ViewState, SoundSO>();
+            foreach (StateSfx pair in sfx)
+            {
+                if (pair.sfxSO != null) stateSfx.Add(pair.state, pair.sfxSO);
+            }
             animator = GetComponent<Animator>();
             canvasGroup = GetComponent<CanvasGroup>();
             UpdateAnimClipTimes();
@@ -61,6 +71,7 @@ namespace JCore.UI
                 currentState == state) return;
             currentState = state;
             Debug.Log(gameObject.name + " : Set state - " + currentState);
+            
             switch (state)
             {
                 case ViewState.Inactive:
@@ -93,6 +104,10 @@ namespace JCore.UI
                     TriggerAnim(h_AnimOut);
                     OnAnimOutStart();
                     break;
+            }
+            if (stateSfx.ContainsKey(state))
+            {
+                SoundManager.Instance.PlaySound(stateSfx[state]);
             }
         }
 
@@ -142,4 +157,11 @@ namespace JCore.UI
     }
 
     public enum ViewState { Init, Inactive, AnimatingIn, Active, InteractionDisabled, AnimatingOut }
+
+    [Serializable]
+    public struct StateSfx
+    {
+        public ViewState state;
+        public SoundSO sfxSO;
+    }
 }

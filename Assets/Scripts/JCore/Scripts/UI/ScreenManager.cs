@@ -12,8 +12,12 @@ namespace JCore.UI
         public Dictionary<string, APanel> panelsById;
         public List<AScreen> queue;
         public List<APanel> openPanels;
+        
+        [Tooltip("UI Gameobject with Backdrop script attached. Will be shown behind views that uses backdrop in inspector.")]
         public Backdrop backdrop;
         
+        [Tooltip("Default state sfx for all views that has 'Use Default Sfx' set in inspector. Can be overridden by views own settings.")]
+        public StateSfx[] defaultSfx;
         void Awake()
         {
             panelsById = new Dictionary<string, APanel>();
@@ -137,6 +141,13 @@ namespace JCore.UI
             foreach (APanel panel in panels)
             {
                 panelsById.Add(panel.name, panel);
+                if (panel.useDefaultSfx)
+                {
+                    foreach (StateSfx sfx in defaultSfx)
+                    {
+                        if (panel.sfx.Contains(sfx) == false) panel.sfx.Add(sfx);
+                    }
+                }
                 panel.Initialize();
             }
 
@@ -144,6 +155,13 @@ namespace JCore.UI
             foreach (AScreen screen in screens)
             {
                 screensById.Add(screen.name, screen);
+                if (screen.useDefaultSfx)
+                {
+                    foreach (StateSfx sfx in defaultSfx)
+                    {
+                        if (screen.sfx.Contains(sfx) == false) screen.sfx.Add(sfx);
+                    }
+                }
                 screen.Initialize();
             }
             

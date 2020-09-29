@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="JCore" t="Include">
+            <e p="Editor" t="Include">
+              <e p="AListSOEditor.cs" t="Include" />
+            </e>
             <e p="Example" t="Include">
               <e p="UI" t="Include">
                 <e p="Scripts" t="Include">
@@ -23,6 +27,7 @@
               </e>
             </e>
             <e p="Scripts" t="Include">
+              <e p="AListSO.cs" t="Include" />
               <e p="Camera" t="Include">
                 <e p="RatioCamera.cs" t="Include" />
               </e>
@@ -33,6 +38,12 @@
               <e p="Singleton" t="Include">
                 <e p="Singleton.cs" t="Include" />
                 <e p="SingletonMonoBehaviour.cs" t="Include" />
+              </e>
+              <e p="Sound" t="Include">
+                <e p="SoundListSO.cs" t="Include" />
+                <e p="SoundManager.cs" t="Include" />
+                <e p="SoundPlayer.cs" t="Include" />
+                <e p="SoundSO.cs" t="Include" />
               </e>
               <e p="UI" t="Include">
                 <e p="APanel.cs" t="Include" />

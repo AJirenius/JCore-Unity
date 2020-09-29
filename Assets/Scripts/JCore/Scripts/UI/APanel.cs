@@ -6,5 +6,6 @@ namespace JCore.UI
 {
     public abstract class APanel : AView
     {
+        public bool useDefaultSfx = false;
     }
 }

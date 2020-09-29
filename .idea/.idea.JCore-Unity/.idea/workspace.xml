@@ -20,13 +20,94 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6642ecd3-6c23-47ee-8a3d-9421f4e9a173" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/Backdrop.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/Backdrop.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Editor/AListSOEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Editor/AListSOEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/btn_pressed.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/btn_pressed.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/btn_released.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/btn_released.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/idle_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/idle_1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/idle_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/idle_2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/idle_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/idle_3.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/idle_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/idle_4.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/idle_5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/idle_5.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/idle_6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/idle_6.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/music.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/music.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/no_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/no_1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/no_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/no_2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/no_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/no_3.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/no_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/no_4.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/no_5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/no_5.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/no_6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/no_6.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/no_7.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/no_7.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/sfx_popet_screen anim in.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/sfx_popet_screen anim in.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/sfx_popet_screen anim out.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/sfx_popet_screen anim out.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/slideHit.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/slideHit.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/yes_1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/yes_1.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/yes_2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/yes_2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/yes_3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/yes_3.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/yes_4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/yes_4.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/yes_5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/yes_5.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/yes_6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/yes_6.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/yes_7.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundAssets/yes_7.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundListSO.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundListSO.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundPlayer.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundPlayer.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundSO.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundSO/MainTheme.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundSO/MainTheme.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundSO/ScreenAnimIn.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundSO/ScreenAnimIn.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundSO/ScreenAnimOut.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundSO/ScreenAnimOut.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundSO/SfxYes.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Sound/SoundSO/SfxYes.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/AListSO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/AListSO.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundListSO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundListSO.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundPlayer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundPlayer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundSO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundSO.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JCore-Unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JCore-Unity/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.JCore-Unity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JCore-Unity/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JCore-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JCore-Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Scenes/UIScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Scenes/UIScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/APanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/APanel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/ScreenManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/ScreenManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,21 +119,28 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundListSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/FirstScreenParams.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/AListSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1Params.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AViewParams.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/ScreenManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/Panel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Editor/AListSOEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/DialogueResult.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/APanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/Backdrop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/Screen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Singleton/SingletonMonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/SecondScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/GameEvents/AGameEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/GameEvents/Gem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -60,20 +148,31 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/DialogueResult.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1Params.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/SecondScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Popup1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AScreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/ScreenManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/Backdrop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundListSO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundSO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/AListSO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Editor/AListSOEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/APanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/AScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Sound/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/ScreenManager.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1i2zcaXH6AvxNe63JTUyaReOf3s" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -107,6 +206,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="444" y="-1101" width="840" height="1034" key="search.everywhere.popup" timestamp="1601370704970">
+      <screen x="-415" y="-1417" width="2560" height="1417" />
+    </state>
+    <state x="444" y="-1101" width="840" height="1034" key="search.everywhere.popup/0.23.1792.1097/-415.-1417.2560.1417@-415.-1417.2560.1417" timestamp="1601370704970" />
   </component>
 </project>
