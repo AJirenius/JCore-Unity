@@ -15,7 +15,7 @@ namespace JCore.Tracking.Raygun
             _client.ApplicationVersion = Application.version;
         }
         
-        public void Log(string condition, string stacktrace, LogType type, IList<Breadcrumb> breadcrumbs)
+        public void Log(string condition, string stacktrace, LogType type, IList<Breadcrumb> breadcrumbs, IList<string> tags)
         {
             Debug.Log("Will send:"+type);
             
@@ -26,7 +26,7 @@ namespace JCore.Tracking.Raygun
                 rgBreadcrumbs.Add(new RaygunBreadcrumb(bc));
             }
             
-            _client.Send(condition, stacktrace, rgBreadcrumbs);
+            _client.Send(condition, stacktrace, rgBreadcrumbs, tags);
         }
         
         public void SetUser(string userId, string userName)
@@ -37,10 +37,6 @@ namespace JCore.Tracking.Raygun
             
             _client.UserInfo = msg;
             _client.User = userName;
-        }
-
-        public void SetBreadCrumb()
-        {
         }
     }
 }

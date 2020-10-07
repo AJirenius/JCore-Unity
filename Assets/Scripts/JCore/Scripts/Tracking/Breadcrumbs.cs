@@ -11,27 +11,25 @@ namespace JCore.Tracking
     {
         private readonly int _maxBreadcrumbs;
         private List<Breadcrumb> _allBreadcrumbs;
-        
+        public List<Breadcrumb> AllBreadcrumbs => _allBreadcrumbs;
+
         public Breadcrumbs(int nr = 100)
         {
             _maxBreadcrumbs = nr;
             _allBreadcrumbs = new List<Breadcrumb>();
         }
         
-        public void AddBreadCrumb(string context, string longMessage = "", BreadcrumbType type = BreadcrumbType.Manual)
+        public void AddBreadCrumb(string message, BreadcrumbType type = BreadcrumbType.Manual, string context = null)
         {
-            Breadcrumb newBC = new Breadcrumb(context, longMessage, type);
+            Breadcrumb newBC = new Breadcrumb(message, type, context);
             _allBreadcrumbs.Add(newBC);
             if (_allBreadcrumbs.Count > _maxBreadcrumbs) _allBreadcrumbs.RemoveAt(0);
             Debug.Log("Added bc:"+newBC+_allBreadcrumbs.Count);
         }
 
-        public List<Breadcrumb> Flush()
+        public List<Breadcrumb> GetAll()
         {
-            List<Breadcrumb> result = _allBreadcrumbs;
-            _allBreadcrumbs = new List<Breadcrumb>();
-            Debug.Log("Will flush nr bc:"+result.Count);
-            return result;
+            return _allBreadcrumbs;
         }
 
         public override string ToString()
@@ -55,16 +53,18 @@ namespace JCore.Tracking
     public struct Breadcrumb
     {
         public long timeStamp;
+        public string message;
         public BreadcrumbType type;
         public string context;
-        public string longMessage;
+        
 
-        public Breadcrumb(string context, string longMessage, BreadcrumbType type)
+        public Breadcrumb(string message, BreadcrumbType type, string context)
         {
             this.timeStamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+            this.message = message;
             this.type = type;
             this.context = context;
-            this.longMessage = longMessage;
+            
         }
         public override string ToString()
         {

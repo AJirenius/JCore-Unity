@@ -2,7 +2,7 @@ namespace JCore.Tracking.Raygun
 {
     public struct RaygunBreadcrumb
     {
-        public long timeStamp;
+        public string timeStamp;
         public string type;
         public string level;
         public string category; 
@@ -10,11 +10,11 @@ namespace JCore.Tracking.Raygun
 
         public RaygunBreadcrumb(Breadcrumb bc)
         {
-            this.timeStamp = bc.timeStamp-2000;
+            this.timeStamp = (bc.timeStamp-2000).ToString();
             this.type = bc.type.ToString().ToLower();
             this.level = "info";
             this.category = bc.context;
-            this.message = bc.longMessage;
+            this.message = bc.message;
         }
     }
 }

@@ -24,7 +24,7 @@ namespace JCore.UI
         public void OnErrorButtonPress()
         {
             Debug.LogError("This is a Debug.LogError");
-            nullObject.name = "will cause exception error";
+            //nullObject.name = "will cause exception error";
         }
 
         override protected void OnParamsSet()

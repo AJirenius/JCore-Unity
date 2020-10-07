@@ -46,15 +46,14 @@
                 <e p="SoundSO.cs" t="Include" />
               </e>
               <e p="Tracking" t="Include">
-                <e p="Breadcrumbs" t="Include">
-                  <e p="Breadcrumbs.cs" t="Include" />
-                </e>
+                <e p="Breadcrumbs.cs" t="Include" />
                 <e p="ErrorTracking.cs" t="Include" />
                 <e p="IErrorTrackingClient.cs" t="Include" />
                 <e p="Raygun" t="Include">
                   <e p="Raygun.cs" t="Include" />
                   <e p="RaygunBreadcrumbs.cs" t="Include" />
                 </e>
+                <e p="Tags.cs" t="Include" />
               </e>
               <e p="UI" t="Include">
                 <e p="APanel.cs" t="Include" />

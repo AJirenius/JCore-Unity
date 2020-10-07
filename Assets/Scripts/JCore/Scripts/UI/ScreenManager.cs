@@ -64,7 +64,7 @@ namespace JCore.UI
             OpenPanels(newScreen);
 
             if (backdrop) backdrop.Open(newScreen);
-            ErrorTracking.Instance.breadcrumbs.AddBreadCrumb(newScreen.name, "Open", BreadcrumbType.Navigation);
+            ErrorTracking.Instance.breadcrumbs.AddBreadCrumb(newScreen.name, BreadcrumbType.Navigation, "Open");
         }
 
         public void CloseQueue(bool closePanels = true)
@@ -107,11 +107,10 @@ namespace JCore.UI
                     {
                         backScreen.Open();
                     }
-                    
+                    ErrorTracking.Instance.breadcrumbs.AddBreadCrumb(backScreen.name, BreadcrumbType.Navigation, "Backed To");
                     OpenPanels(backScreen);
                     if (backdrop) backdrop.Open(backScreen);
                 }
-                
             }
         }
 
