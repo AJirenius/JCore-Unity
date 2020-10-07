@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using System.Text;
+using JCore.Tracking;
 using Mindscape.Raygun4Unity.Messages;
 using UnityEngine;
 
@@ -70,9 +71,9 @@ namespace Mindscape.Raygun4Unity
     /// </summary>
     /// <param name="message">The exception message.</param>
     /// <param name="stackTrace">The stack trace information.</param>
-    public void Send(string message, string stackTrace)
+    public void Send(string message, string stackTrace, IList<Breadcrumb> breadcrumbs)
     {
-      Send(message, stackTrace, null, null);
+      Send(message, stackTrace, breadcrumbs, null, null);
     }
 
     /// <summary>
@@ -83,18 +84,9 @@ namespace Mindscape.Raygun4Unity
     /// <param name="stackTrace">The stack trace information.</param>
     /// <param name="tags">A list of strings associated with the message.</param>
     /// <param name="userCustomData">A key-value collection of custom data that will be added to the payload.</param>
-    public void Send(string message, string stackTrace, IList<string> tags, IDictionary userCustomData)
+    public void Send(string message, string stackTrace, IList<Breadcrumb> breadcrumbs, IList<string> tags = null, IDictionary userCustomData = null)
     {
       Send(BuildMessage(message, stackTrace, tags, userCustomData));
-    }
-
-    /// <summary>
-    /// Transmits an exception to Raygun.io synchronously.
-    /// </summary>
-    /// <param name="exception">The exception to deliver.</param>
-    public void Send(Exception exception)
-    {
-      Send(exception, null, null);
     }
 
     /// <summary>
@@ -104,12 +96,12 @@ namespace Mindscape.Raygun4Unity
     /// <param name="exception">The exception to deliver.</param>
     /// <param name="tags">A list of strings associated with the message.</param>
     /// <param name="userCustomData">A key-value collection of custom data that will be added to the payload.</param>
-    public void Send(Exception exception, IList<string> tags, IDictionary userCustomData)
+    public void Send(Exception exception, IList<string> tags = null, IDictionary userCustomData = null)
     {
       Send(BuildMessage(exception, tags, userCustomData));
     }
 
-    internal RaygunMessage BuildMessage(string message, string stackTrace, IList<string> tags, IDictionary userCustomData)
+    internal RaygunMessage BuildMessage(string message, string stackTrace, IList<Breadcrumb> breadcrumbs, IList<string> tags, IDictionary userCustomData)
     {
       RaygunMessage raygunMessage = RaygunMessageBuilder.New
         .SetEnvironmentDetails()
@@ -120,6 +112,7 @@ namespace Mindscape.Raygun4Unity
         .SetTags(tags)
         .SetUserCustomData(userCustomData)
         .SetUser(UserInfo ?? (!String.IsNullOrEmpty(User) ? new RaygunIdentifierMessage(User) : null))
+        .SetBreadcrumbs(breadcrumbs)
         .Build();
       return raygunMessage;
     }

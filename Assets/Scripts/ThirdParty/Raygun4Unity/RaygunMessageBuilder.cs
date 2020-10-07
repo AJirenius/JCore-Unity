@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
+using JCore.Tracking;
 using Mindscape.Raygun4Unity.Messages;
 
 namespace Mindscape.Raygun4Unity
@@ -87,6 +88,12 @@ namespace Mindscape.Raygun4Unity
       {
         _raygunMessage.Details.Version = "Not supplied";
       }
+      return this;
+    }
+
+    public IRaygunMessageBuilder SetBreadcrumbs(IList<Breadcrumb> breadcrumbs)
+    {
+      _raygunMessage.Details.BreadCrumbs = breadcrumbs;
       return this;
     }
   }

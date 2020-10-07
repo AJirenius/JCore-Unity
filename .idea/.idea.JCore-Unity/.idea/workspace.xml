@@ -27,10 +27,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6642ecd3-6c23-47ee-8a3d-9421f4e9a173" name="Default Changelist" comment="40">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JCore-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JCore-Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Scenes/UIScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/Scenes/UIScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/FirstScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/FirstScreen.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Tracking/ErrorTracking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Tracking/ErrorTracking.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Tracking/IErrorTrackingClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Tracking/IErrorTrackingClient.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Tracking/Raygun/Raygun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Tracking/Raygun/Raygun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/IRaygunMessageBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/IRaygunMessageBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/Messages/RaygunClientMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/Messages/RaygunClientMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/Messages/RaygunMessageDetails.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/Messages/RaygunMessageDetails.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/RaygunClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/RaygunClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/RaygunMessageBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/RaygunMessageBuilder.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +57,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/Messages/RaygunMessageDetails.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/Messages/RaygunMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/Messages/RaygunClientMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/Messages/RaygunEnvironmentMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/RaygunSendingMessageEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/RaygunClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Tracking/IErrorTrackingClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/RaygunMessageBuilder.cs" root0="FORCE_HIGHLIGHTING" />
@@ -101,10 +107,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Tracking/Breadcrumbs/Breadcrumbs.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/UI/ScreenManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/Starter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Tracking/IErrorTrackingClient.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Example/UI/Scripts/FirstScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/Messages/RaygunMessageDetails.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/Messages/RaygunClientMessage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/IRaygunMessageBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/RaygunMessageBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Tracking/IErrorTrackingClient.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Tracking/ErrorTracking.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/JCore/Scripts/Tracking/Raygun/Raygun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ThirdParty/Raygun4Unity/RaygunClient.cs" />
       </list>
     </option>
   </component>

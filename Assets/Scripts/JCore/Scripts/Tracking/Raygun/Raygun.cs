@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using Mindscape.Raygun4Unity;
 using Mindscape.Raygun4Unity.Messages;
@@ -14,12 +15,12 @@ namespace JCore.Tracking.Raygun
             _client.ApplicationVersion = Application.version;
         }
         
-        public void Log(string condition, string stacktrace, LogType type)
+        public void Log(string condition, string stacktrace, LogType type, IList<Breadcrumb> breadcrumbs)
         {
             Debug.Log("Will send:"+type);
             if (type == LogType.Exception || type == LogType.Error)
             {
-                _client.Send(condition, stacktrace);
+                _client.Send(condition, stacktrace, breadcrumbs);
             }
         }
         

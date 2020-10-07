@@ -2,7 +2,7 @@ using UnityEngine;
 namespace JCore.Tracking
 {
     
-    public class ErrorTracking : SingletonMonoBehaviour<ErrorTracking>, IErrorTrackingClient
+    public class ErrorTracking : SingletonMonoBehaviour<ErrorTracking>
     {
         public bool sendFromEditor = false;
         public bool sendFromBuild = true;
@@ -72,7 +72,7 @@ namespace JCore.Tracking
         {
             Debug.Log("Logging "+condition+","+type);
             if (client == null) Init();
-            if (enabled) client.Log(condition, stacktrace, type);
+            if (enabled) client.Log(condition, stacktrace, type, breadcrumbs.Flush());
         }
 
         public void SetUser(string userId, string userName)
