@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c411d141ccbb234bb96a5b77a1c3b5f, type: 3}
-  m_Name: ScreenAnimOut
+  m_Name: SfxYes
   m_EditorClassIdentifier: 
   id: ScreenAnimIn
   looping: 0
+  stinger: 0
   maxPlaying: 0
   sound:
   - {fileID: 8300000, guid: 19c08790861de409d80b90857e5430b9, type: 3}

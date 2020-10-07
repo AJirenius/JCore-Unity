@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using JCore.Tracking;
 using UnityEngine;
 
 namespace JCore.UI
@@ -63,6 +64,7 @@ namespace JCore.UI
             OpenPanels(newScreen);
 
             if (backdrop) backdrop.Open(newScreen);
+            ErrorTracking.Instance.breadcrumbs.AddBreadCrumb(newScreen.name, "Open", BreadcrumbType.Navigation);
         }
 
         public void CloseQueue(bool closePanels = true)

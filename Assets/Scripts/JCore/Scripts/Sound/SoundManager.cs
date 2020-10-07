@@ -78,7 +78,7 @@ namespace JCore.Sound
                 soundPlayer = ReuseEarliest();
                 if (soundPlayer == null)
                 {
-                    Debug.LogWarning("Couldnt play sounds as all SoundPlayers were looping. Consider increasing the sound buffer.");
+                    Debug.LogWarning("Couldn't play sounds as all SoundPlayers were looping. Consider increasing the sound buffer.");
                     return 0;
                 }
             }
@@ -155,6 +155,5 @@ namespace JCore.Sound
             }
             return (count >= sound.maxPlaying);
         }
-
     }
 }

@@ -45,6 +45,16 @@
                 <e p="SoundPlayer.cs" t="Include" />
                 <e p="SoundSO.cs" t="Include" />
               </e>
+              <e p="Tracking" t="Include">
+                <e p="Breadcrumbs" t="Include">
+                  <e p="Breadcrumbs.cs" t="Include" />
+                </e>
+                <e p="ErrorTracking.cs" t="Include" />
+                <e p="IErrorTrackingClient.cs" t="Include" />
+                <e p="Raygun" t="Include">
+                  <e p="Raygun.cs" t="Include" />
+                </e>
+              </e>
               <e p="UI" t="Include">
                 <e p="APanel.cs" t="Include" />
                 <e p="AScreen.cs" t="Include" />
@@ -55,6 +65,24 @@
                 <e p="Screen.cs" t="Include" />
                 <e p="ScreenManager.cs" t="Include" />
               </e>
+            </e>
+          </e>
+          <e p="ThirdParty" t="Include">
+            <e p="Raygun4Unity" t="Include">
+              <e p="IRaygunMessageBuilder.cs" t="Include" />
+              <e p="Messages" t="Include">
+                <e p="RaygunClientMessage.cs" t="Include" />
+                <e p="RaygunEnvironmentMessage.cs" t="Include" />
+                <e p="RaygunErrorMessage.cs" t="Include" />
+                <e p="RaygunErrorStackTraceLineMessage.cs" t="Include" />
+                <e p="RaygunIdentifierMessage.cs" t="Include" />
+                <e p="RaygunMessage.cs" t="Include" />
+                <e p="RaygunMessageDetails.cs" t="Include" />
+              </e>
+              <e p="RaygunClient.cs" t="Include" />
+              <e p="RaygunMessageBuilder.cs" t="Include" />
+              <e p="RaygunSendingMessageEventArgs.cs" t="Include" />
+              <e p="SimpleJson.cs" t="Include" />
             </e>
           </e>
         </e>

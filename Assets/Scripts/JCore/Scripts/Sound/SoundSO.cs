@@ -9,6 +9,8 @@ namespace JCore.Sound
 
         public bool looping;
 
+        public bool stinger = false;
+
         [Tooltip("How many of this same sound can be played at the same time? 0 = unlimited")]
         public int maxPlaying = 0;
 
