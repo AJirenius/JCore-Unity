@@ -27,7 +27,5 @@ namespace JCore.Tracking
                 _tags.Remove(tagName);
             }
         }
-
-
     }
 }

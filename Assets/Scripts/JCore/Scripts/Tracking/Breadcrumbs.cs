@@ -27,11 +27,6 @@ namespace JCore.Tracking
             Debug.Log("Added bc:"+newBC+_allBreadcrumbs.Count);
         }
 
-        public List<Breadcrumb> GetAll()
-        {
-            return _allBreadcrumbs;
-        }
-
         public override string ToString()
         {
             string str = "";

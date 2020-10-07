@@ -14,6 +14,7 @@ namespace JCore.Tracking
 
         public Breadcrumbs breadcrumbs;
         public Tags tags;
+        public UserCustomData userCustomData;
         
         private static IErrorTrackingClient client;
         private bool enabled = false;
@@ -26,6 +27,7 @@ namespace JCore.Tracking
 
                 breadcrumbs = new Breadcrumbs(maxBreadcrumbs);
                 tags = new Tags();
+                userCustomData = new UserCustomData();
                 
 #if UNITY_EDITOR
                 if (sendFromEditor)
@@ -75,7 +77,7 @@ namespace JCore.Tracking
             if (type == LogType.Exception || type == LogType.Error)
             {
                 if (client == null) Init();
-                if (enabled) client.Log(condition, stacktrace, type, breadcrumbs.AllBreadcrumbs, tags.AllTags);
+                if (enabled) client.Log(condition, stacktrace, type, breadcrumbs.AllBreadcrumbs, tags.AllTags, userCustomData.Data);
             }
         }
 

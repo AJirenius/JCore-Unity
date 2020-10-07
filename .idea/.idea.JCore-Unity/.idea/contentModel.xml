@@ -54,6 +54,7 @@
                   <e p="RaygunBreadcrumbs.cs" t="Include" />
                 </e>
                 <e p="Tags.cs" t="Include" />
+                <e p="UserCustomData.cs" t="Include" />
               </e>
               <e p="UI" t="Include">
                 <e p="APanel.cs" t="Include" />
