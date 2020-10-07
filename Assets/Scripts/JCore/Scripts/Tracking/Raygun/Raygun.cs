@@ -11,10 +11,12 @@ namespace JCore.Tracking.Raygun
         public void Init(string apikey)
         {
             _client = new RaygunClient(apikey);
+            _client.ApplicationVersion = Application.version;
         }
         
         public void Log(string condition, string stacktrace, LogType type)
         {
+            Debug.Log("Will send:"+type);
             if (type == LogType.Exception || type == LogType.Error)
             {
                 _client.Send(condition, stacktrace);
@@ -26,6 +28,9 @@ namespace JCore.Tracking.Raygun
             RaygunIdentifierMessage msg = new RaygunIdentifierMessage(userId);
             msg.Identifier = userId;
             msg.FullName = userName;
+            
+            _client.UserInfo = msg;
+            _client.User = userName;
         }
 
         public void SetBreadCrumb()

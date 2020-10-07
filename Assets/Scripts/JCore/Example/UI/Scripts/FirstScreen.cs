@@ -8,7 +8,8 @@ namespace JCore.UI
     {
         public string button1ScreenId;
         public AScreen button2Screen;
-
+        private GameObject nullObject;
+        
         public void OnButton1Press()
         {
             ScreenManager.Instance.AddToQueue(button1ScreenId);
@@ -17,6 +18,11 @@ namespace JCore.UI
         public void OnButton2Press()
         {
             ScreenManager.Instance.AddToQueue(button2Screen);
+        }
+
+        public void OnErrorButtonPress()
+        {
+            nullObject.name = "will cause error";
         }
 
         override protected void OnParamsSet()

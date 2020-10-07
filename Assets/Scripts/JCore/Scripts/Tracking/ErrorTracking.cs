@@ -70,6 +70,7 @@ namespace JCore.Tracking
 
         public void Log(string condition, string stacktrace, LogType type)
         {
+            Debug.Log("Logging "+condition+","+type);
             if (client == null) Init();
             if (enabled) client.Log(condition, stacktrace, type);
         }
