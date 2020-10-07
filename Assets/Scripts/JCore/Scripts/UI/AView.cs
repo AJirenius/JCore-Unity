@@ -70,7 +70,7 @@ namespace JCore.UI
                 (state == ViewState.AnimatingOut && currentState == ViewState.Inactive) ||
                 currentState == state) return;
             currentState = state;
-            Debug.Log(gameObject.name + " : Set state - " + currentState);
+            //Debug.Log(gameObject.name + " : Set state - " + currentState);
             
             switch (state)
             {

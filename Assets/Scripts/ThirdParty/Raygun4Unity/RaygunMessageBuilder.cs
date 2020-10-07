@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 using JCore.Tracking;
+using JCore.Tracking.Raygun;
 using Mindscape.Raygun4Unity.Messages;
 
 namespace Mindscape.Raygun4Unity
@@ -91,9 +92,9 @@ namespace Mindscape.Raygun4Unity
       return this;
     }
 
-    public IRaygunMessageBuilder SetBreadcrumbs(IList<Breadcrumb> breadcrumbs)
+    public IRaygunMessageBuilder SetBreadcrumbs(IList<RaygunBreadcrumb> breadcrumbs)
     {
-      _raygunMessage.Details.BreadCrumbs = breadcrumbs;
+      _raygunMessage.Details.Breadcrumbs = breadcrumbs;
       return this;
     }
   }

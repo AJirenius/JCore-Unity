@@ -23,12 +23,14 @@ namespace JCore.Tracking
             Breadcrumb newBC = new Breadcrumb(context, longMessage, type);
             _allBreadcrumbs.Add(newBC);
             if (_allBreadcrumbs.Count > _maxBreadcrumbs) _allBreadcrumbs.RemoveAt(0);
+            Debug.Log("Added bc:"+newBC+_allBreadcrumbs.Count);
         }
 
         public List<Breadcrumb> Flush()
         {
             List<Breadcrumb> result = _allBreadcrumbs;
             _allBreadcrumbs = new List<Breadcrumb>();
+            Debug.Log("Will flush nr bc:"+result.Count);
             return result;
         }
 
@@ -52,14 +54,14 @@ namespace JCore.Tracking
 
     public struct Breadcrumb
     {
-        public string timeStamp;
+        public long timeStamp;
         public BreadcrumbType type;
         public string context;
         public string longMessage;
 
         public Breadcrumb(string context, string longMessage, BreadcrumbType type)
         {
-            this.timeStamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString();
+            this.timeStamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
             this.type = type;
             this.context = context;
             this.longMessage = longMessage;

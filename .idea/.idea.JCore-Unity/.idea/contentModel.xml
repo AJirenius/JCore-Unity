@@ -53,6 +53,7 @@
                 <e p="IErrorTrackingClient.cs" t="Include" />
                 <e p="Raygun" t="Include">
                   <e p="Raygun.cs" t="Include" />
+                  <e p="RaygunBreadcrumbs.cs" t="Include" />
                 </e>
               </e>
               <e p="UI" t="Include">

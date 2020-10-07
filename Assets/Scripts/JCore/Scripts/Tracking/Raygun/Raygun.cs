@@ -18,10 +18,15 @@ namespace JCore.Tracking.Raygun
         public void Log(string condition, string stacktrace, LogType type, IList<Breadcrumb> breadcrumbs)
         {
             Debug.Log("Will send:"+type);
-            if (type == LogType.Exception || type == LogType.Error)
+            
+            // convert Breadcrumbs to Raygun format
+            IList<RaygunBreadcrumb> rgBreadcrumbs = new List<RaygunBreadcrumb>();
+            foreach (Breadcrumb bc in breadcrumbs)
             {
-                _client.Send(condition, stacktrace, breadcrumbs);
+                rgBreadcrumbs.Add(new RaygunBreadcrumb(bc));
             }
+            
+            _client.Send(condition, stacktrace, rgBreadcrumbs);
         }
         
         public void SetUser(string userId, string userName)

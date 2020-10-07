@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using JCore.Tracking;
+using JCore.Tracking.Raygun;
 using Mindscape.Raygun4Unity.Messages;
 
 namespace Mindscape.Raygun4Unity
@@ -28,6 +29,6 @@ namespace Mindscape.Raygun4Unity
 
     IRaygunMessageBuilder SetUser(RaygunIdentifierMessage user);
 
-    IRaygunMessageBuilder SetBreadcrumbs(IList<Breadcrumb> breadcrumbs);
+    IRaygunMessageBuilder SetBreadcrumbs(IList<RaygunBreadcrumb> breadcrumbs);
   }
 }

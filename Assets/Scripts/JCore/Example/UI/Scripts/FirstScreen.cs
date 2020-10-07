@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using JCore.Tracking;
 using UnityEngine;
 
 namespace JCore.UI
@@ -22,7 +23,8 @@ namespace JCore.UI
 
         public void OnErrorButtonPress()
         {
-            nullObject.name = "will cause error";
+            Debug.LogError("This is a Debug.LogError");
+            nullObject.name = "will cause exception error";
         }
 
         override protected void OnParamsSet()
