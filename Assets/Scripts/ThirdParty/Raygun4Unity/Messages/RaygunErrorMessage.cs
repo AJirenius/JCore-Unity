@@ -20,13 +20,13 @@ namespace Mindscape.Raygun4Unity.Messages
         ParseWindowsPhoneMessage(message);
         if (!String.IsNullOrEmpty(stackTrace))
         {
-          StackTrace = BuildStackTrace(stackTrace);
+          this.stackTrace = BuildStackTrace(stackTrace);
         }
       }
       else
       {
-        Message = message;
-        StackTrace = BuildStackTrace(stackTrace);
+        this.message = message;
+        this.stackTrace = BuildStackTrace(stackTrace);
       }
     }
 
@@ -34,21 +34,21 @@ namespace Mindscape.Raygun4Unity.Messages
     {
       Type exceptionType = exception.GetType();
 
-      Message = string.Format("{0}: {1}", exceptionType.Name, exception.Message);
-      ClassName = exceptionType.FullName;
+      message = string.Format("{0}: {1}", exceptionType.Name, exception.Message);
+      className = exceptionType.FullName;
 
-      StackTrace = BuildStackTrace(exception);
-      Data = exception.Data;
+      stackTrace = BuildStackTrace(exception);
+      data = exception.Data;
 
       if (exception.InnerException != null)
       {
-        InnerError = new RaygunErrorMessage(exception.InnerException);
+        innerError = new RaygunErrorMessage(exception.InnerException);
       }
     }
 
     private void ParseWindowsPhoneMessage(string message)
     {
-      RawMessage = message;
+      rawMessage = message;
 
       if (!String.IsNullOrEmpty(message))
       {
@@ -75,24 +75,24 @@ namespace Mindscape.Raygun4Unity.Messages
           }
         }
 
-        ClassName = type;
+        className = type;
         int index = type.LastIndexOf(".");
         if (index >= 0)
         {
           string exceptionType = type.Substring(index + 1);
-          Message = exceptionType + ": " + exception;
+          this.message = exceptionType + ": " + exception;
         }
 
-        if (String.IsNullOrEmpty(Message))
+        if (String.IsNullOrEmpty(this.message))
         {
-          Message = message;
+          this.message = message;
         }
 
         int stackIndex = message.IndexOf("   at ");
         if (stackIndex >= 0)
         {
           string stackTrace = message.Substring(stackIndex);
-          StackTrace = BuildStackTrace(stackTrace);
+          this.stackTrace = BuildStackTrace(stackTrace);
         }
       }
     }
@@ -298,16 +298,16 @@ namespace Mindscape.Raygun4Unity.Messages
       return lines.ToArray();
     }
 
-    public RaygunErrorMessage InnerError { get; set; }
+    public RaygunErrorMessage innerError { get; set; }
 
-    public IDictionary Data { get; set; }
+    public IDictionary data { get; set; }
 
-    public string ClassName { get; set; }
+    public string className { get; set; }
 
-    public string Message { get; set; }
+    public string message { get; set; }
 
-    public string RawMessage { get; set; }
+    public string rawMessage { get; set; }
 
-    public RaygunErrorStackTraceLineMessage[] StackTrace { get; set; }
+    public RaygunErrorStackTraceLineMessage[] stackTrace { get; set; }
   }
 }

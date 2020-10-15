@@ -9,23 +9,23 @@ namespace Mindscape.Raygun4Unity.Messages
 {
   public class RaygunMessageDetails
   {
-    public string MachineName { get; set; }
+    public string machineName { get; set; }
 
-    public string Version { get; set; }
+    public string version { get; set; }
 
-    public RaygunErrorMessage Error { get; set; }
+    public RaygunErrorMessage error { get; set; }
 
-    public RaygunEnvironmentMessage Environment { get; set; }
+    public RaygunEnvironmentMessage environment { get; set; }
 
-    public RaygunClientMessage Client { get; set; }
+    public RaygunClientMessage client { get; set; }
 
-    public IList<string> Tags { get; set; }
+    public IList<string> tags { get; set; }
 
-    public IDictionary UserCustomData { get; set; }
+    public IDictionary userCustomData { get; set; }
 
-    public RaygunIdentifierMessage User { get; set; }
+    public RaygunIdentifierMessage user { get; set; }
 
-    public IList<RaygunBreadcrumb> Breadcrumbs { get; set; }
+    public IList<RaygunBreadcrumb> breadcrumbs { get; set; }
     
   }
 }

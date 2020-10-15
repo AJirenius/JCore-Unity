@@ -140,7 +140,7 @@ namespace Mindscape.Raygun4Unity
 
           try
           {
-            Debug.Log("Breadcrumbs count:"+raygunMessage.Details.Breadcrumbs.Count);
+            Debug.Log("Breadcrumbs count:"+raygunMessage.Details.breadcrumbs.Count);
             message = SimpleJson.SerializeObject(raygunMessage);
           }
           catch (Exception ex)

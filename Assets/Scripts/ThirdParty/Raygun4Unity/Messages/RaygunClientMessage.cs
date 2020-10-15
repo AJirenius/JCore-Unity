@@ -9,15 +9,15 @@ namespace Mindscape.Raygun4Unity.Messages
   {
     public RaygunClientMessage()
     {
-      Name = "Raygun4Unity-JCore";
-      Version = "0.1.0.0";
-      ClientUrl = @"https://github.com/MindscapeHQ/raygun4unity";
+      name = "Raygun4Unity-JCore";
+      version = "0.1.0.0";
+      clientUrl = @"https://github.com/MindscapeHQ/raygun4unity";
     }
 
-    public string Name { get; set; }
+    public string name { get; set; }
 
-    public string Version { get; set; }
+    public string version { get; set; }
 
-    public string ClientUrl { get; set; }
+    public string clientUrl { get; set; }
   }
 }

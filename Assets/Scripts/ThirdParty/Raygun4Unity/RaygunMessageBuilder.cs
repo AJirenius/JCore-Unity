@@ -33,49 +33,49 @@ namespace Mindscape.Raygun4Unity
 
     public IRaygunMessageBuilder SetMachineName(string machineName)
     {
-      _raygunMessage.Details.MachineName = machineName;
+      _raygunMessage.Details.machineName = machineName;
       return this;
     }
 
     public IRaygunMessageBuilder SetEnvironmentDetails()
     {
-      _raygunMessage.Details.Environment = new RaygunEnvironmentMessage();
+      _raygunMessage.Details.environment = new RaygunEnvironmentMessage();
       return this;
     }
 
     public IRaygunMessageBuilder SetExceptionDetails(string message, string stackTrace)
     {
-      _raygunMessage.Details.Error = new RaygunErrorMessage(message, stackTrace);
+      _raygunMessage.Details.error = new RaygunErrorMessage(message, stackTrace);
       return this;
     }
 
     public IRaygunMessageBuilder SetExceptionDetails(Exception exception)
     {
-      _raygunMessage.Details.Error = new RaygunErrorMessage(exception);
+      _raygunMessage.Details.error = new RaygunErrorMessage(exception);
       return this;
     }
 
     public IRaygunMessageBuilder SetClientDetails()
     {
-      _raygunMessage.Details.Client = new RaygunClientMessage();
+      _raygunMessage.Details.client = new RaygunClientMessage();
       return this;
     }
 
     public IRaygunMessageBuilder SetUserCustomData(IDictionary userCustomData)
     {
-      _raygunMessage.Details.UserCustomData = userCustomData;
+      _raygunMessage.Details.userCustomData = userCustomData;
       return this;
     }
 
     public IRaygunMessageBuilder SetTags(IList<string> tags)
     {
-      _raygunMessage.Details.Tags = tags;
+      _raygunMessage.Details.tags = tags;
       return this;
     }
 
     public IRaygunMessageBuilder SetUser(RaygunIdentifierMessage user)
     {
-      _raygunMessage.Details.User = user;
+      _raygunMessage.Details.user = user;
       return this;
     }
 
@@ -83,18 +83,18 @@ namespace Mindscape.Raygun4Unity
     {
       if (!String.IsNullOrEmpty(version))
       {
-        _raygunMessage.Details.Version = version;
+        _raygunMessage.Details.version = version;
       }
       else
       {
-        _raygunMessage.Details.Version = "Not supplied";
+        _raygunMessage.Details.version = "Not supplied";
       }
       return this;
     }
 
     public IRaygunMessageBuilder SetBreadcrumbs(IList<RaygunBreadcrumb> breadcrumbs)
     {
-      _raygunMessage.Details.Breadcrumbs = breadcrumbs;
+      _raygunMessage.Details.breadcrumbs = breadcrumbs;
       return this;
     }
   }

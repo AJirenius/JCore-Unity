@@ -32,8 +32,8 @@ namespace JCore.Tracking.Raygun
         public void SetUser(string userId, string userName)
         {
             RaygunIdentifierMessage msg = new RaygunIdentifierMessage(userId);
-            msg.Identifier = userId;
-            msg.FullName = userName;
+            msg.identifier = userId;
+            msg.fullName = userName;
             
             _client.UserInfo = msg;
             _client.User = userName;
